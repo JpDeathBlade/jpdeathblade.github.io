@@ -5,7 +5,8 @@ date:   2018-01-02 00:00:00 -0500
 categories: blog
 tags: [JpDeathBlade, Blog]
 published: true
-author: "JpDeathBlade"
+preview: true
+author: "Jp"
 ---
 Since I'm working on this blog most of the early blog posts will be about it. The first thing that needs to be done is embedding of media. Some of it is simple, some of it not so much but I'll cover some of the more important social media things first. 
 

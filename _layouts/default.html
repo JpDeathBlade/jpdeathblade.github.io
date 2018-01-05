@@ -2,9 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
-  
-  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-  {% include apple-icons.html %}
 
   <body>
 
@@ -17,9 +14,9 @@
     </main>
 
     {% include footer.html %}
+    
     {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-        {% include adsense.html %}
+        {% include google-adsense.html %}
     {% endif %}
   </body>
 

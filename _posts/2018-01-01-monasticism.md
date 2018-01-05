@@ -5,7 +5,8 @@ date:   2018-01-01 00:00:00 -0500
 categories: blog
 tags: [JpDeathBlade, Blog]
 published: true
-author: "JpDeathBlade"
+preview: true
+author: "Jp"
 ---
 三日坊主 (Mikka Bouzu)
 
