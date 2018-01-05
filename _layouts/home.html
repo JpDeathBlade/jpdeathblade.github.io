@@ -10,7 +10,19 @@ layout: default
   {{ content }}
 
   {% if site.posts.size > 0 %}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  
+  	<!-- List Header -->
+  	<div class="home_post_list_header">
+  		<div class="home_post_list_header_text">
+  			{{ page.list_title | default: "Posts" }}
+  		</div>
+  	
+  		<a href="{{ "/feed.xml" | relative_url }}">
+  			<img class="home_post_list_header_rss" src="/assets/images/icons/rss.png" alt="Subscribe via RSS" />
+  		</a>
+  	</div>
+  
+    <!-- List -->
     <ul class="post-list">
       {% for post in site.posts %}
         <li class="home_post_li_container">
@@ -29,19 +41,16 @@ layout: default
           	</div>
           	
           	<!-- Post Preview -->
-          	{% if post.preview %}
-          		<div class="home_post_content">
-          			{{ post.content | strip_html | truncatewords:75}}
-          			<a class="home_post_read_more_link" href="{{ post.url | relative_url }}">Read more...</a>
-          		</div>
-          	{% endif %}
+          	<div class="home_post_content">
+          		{{ post.excerpt }}
+          		<a class="home_post_read_more_link" href="{{ post.url | relative_url }}">[Read more]</a>
+          	</div>
           	
           </div>
         </li>
       {% endfor %}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {% endif %}
 
 </div>

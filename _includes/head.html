@@ -1,20 +1,20 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Joseph Stuhr">
-  <meta name="description" content="Website for me and my projects.">
-  <title>{{ site.title | escape }}</title>
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Joseph Stuhr">
+	<meta name="description" content="Website for me and my projects.">
+	<title>{{ site.title | escape }}</title>
+	<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+	<link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+	<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
   
-  <!-- Apple Springboard Icons -->
-  {% include apple-icons.html %}
+	<!-- Apple Springboard Icons -->
+	{% include apple-icons.html %}
   
-  {% if jekyll.environment == 'production' %}
-    <!-- Google Analytics -->
-    {% include google-analytics.html %}
-  {% endif %}
+	{% if jekyll.environment == 'production' %}
+		<!-- Google Analytics -->
+		{% include google-analytics.html %}
+	{% endif %}
 </head>

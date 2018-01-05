@@ -5,10 +5,12 @@ date:   2018-01-02 00:00:00 -0500
 categories: blog
 tags: [JpDeathBlade, Blog]
 published: true
-preview: true
 author: "Jp"
+excerpt_separator: <!--more-->
 ---
-Since I'm working on this blog most of the early blog posts will be about it. The first thing that needs to be done is embedding of media. Some of it is simple, some of it not so much but I'll cover some of the more important social media things first. 
+Since I'm working on this blog most of the early blog posts will be about it. The first thing that needs to be done is embedding of media. Some of it is simple, some of it not so much but I'll cover some of the more important social media things first.
+
+<!--more-->
 
 ### Images
 Images are the most important and with Jekyll it's super easy to make them display. I've added some images for iOS so that when you bookmark this blog to your springboard you'll see an image instead of a photo of the blog. We can use one of those images as our test. It looks like this:
